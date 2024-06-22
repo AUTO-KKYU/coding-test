@@ -114,3 +114,14 @@ even_numbers = list(range(5 + (5 % 2), 21, 2))
 print(even_numbers)
 # 결과: [6, 8, 10, 12, 14, 16, 18, 20]
 ```
+
+- 알파벳(소문자, 대문자)
+```sh
+upper() : 대문자 변환
+lower() : 소문자 변환
+swapcase() : 대문자 -> 소문자 // 소문자 -> 대문자
+capitalize() : 문자열의 첫번째 문자는 대문자, 나머지는 소문자
+title() : 문자열에서 각 단어의 첫 번째 문자는 대문자로, 나머지 문자는 소문자로 변환
+
+check upper or lower : str.isupper() , str.islower()
+```
