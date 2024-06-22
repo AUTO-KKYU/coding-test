@@ -98,3 +98,19 @@ print("깊은 복사된 배열:", deep_copied)
 # 깊은 복사 후 원본 배열: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 # 깊은 복사된 배열: [[111, 2, 3], [4, 5, 6], [7, 8, 9]]
 ```
+- range 함수 응용
+```sh
+range(stop)
+range(start, stop)
+range(start, stop, step)
+
+# 1. 1부터 10까지의 제곱수를 생성하는 리스트
+squares = [x**2 for x in range(1, 11)]
+print(squares)
+# 결과: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100] 
+
+# 2. 5부터 20까지의 숫자 중 짝수만 포함하는 리스트
+even_numbers = list(range(5 + (5 % 2), 21, 2))
+print(even_numbers)
+# 결과: [6, 8, 10, 12, 14, 16, 18, 20]
+```
