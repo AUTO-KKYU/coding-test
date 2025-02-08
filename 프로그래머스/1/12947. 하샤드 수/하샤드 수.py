@@ -1,3 +1,7 @@
 def solution(x):
-    digit_sum = sum(map(int, str(x)))
-    return x % digit_sum == 0
+    a = sum(map(int, str(x)))
+    
+    if x % a == 0:
+        return True
+    else:
+        return False
